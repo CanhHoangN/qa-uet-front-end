@@ -1,5 +1,10 @@
 body{
     font-family: 'Lato', sans-serif;
+
+}
+.body-qa{
+    z-index: -99;
+
 }
 .btn-primary {
     color: #fff;
@@ -28,13 +33,13 @@ body{
 .logo-search{
     padding: 15px;
 }
-.login{
+.login-register{
     padding: 20px;
     color: #15a4fa;
     text-align: center;
 
 }
-.login a{
+.login-register a{
 
     text-decoration: none;
     cursor: pointer;
@@ -281,7 +286,7 @@ p.user-badge {
     padding: 2px;
     margin-left: 8%;
     /* margin-bottom: 3%; */
-    width: 46%;
+    width: 55%;
 }
 
 .most-used-tags ul li {
@@ -319,4 +324,204 @@ p.user-badge {
 }
 .class-while{
     background: #FFFFFF;
+}
+/*login
+ */
+
+.qa-login {
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    z-index: 1000;
+}
+.bg-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    visibility: hidden;
+
+}
+.display{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1414178a;
+    z-index: 20;
+}
+.show-bg-cover{
+    display: block;
+    visibility: visible;
+}
+input#email-login,input#email-register,input#name{
+    background: none;
+    border: none;
+    outline: none;
+    width: 80%;
+    border-bottom: 1px solid #999;
+    padding: 2px 30px;
+    box-sizing: border-box;
+    margin-bottom: 6%;
+}
+.password {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+input#password-login,input#password-register,input#repassword-register {
+    border: none;
+    outline: none;
+    background: none;
+    width: 80%;
+    border-bottom: 1px solid #999;
+    padding: 2px 30px;
+    box-sizing: border-box;
+    margin-bottom: 6%;
+}
+input[type="submit"] {
+    /* padding: 12px; */
+    display: inline-block;
+    background: #6dabe4;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 9px 39px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2#signup {
+    line-height: 1.66;
+    margin: 0px 0px 33px;
+    padding: 0;
+    font-weight: bold;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+
+.remember {
+    margin-left: 10px;
+    margin-bottom: 5%;
+    /* position: absolute; */
+}
+
+.remember span {
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8px;
+}
+.email {
+    position: relative;
+    margin-bottom: 5%;
+}
+i.fa.fa-envelope {
+    /* border-bottom: 1px solid; */
+    position: absolute;
+    top: 14%;
+    left: 2%;
+    /* padding: 9px; */
+}
+i.fas.fa-user {
+    position: absolute;
+    top: 14%;
+    left: 2%;
+}
+.img-login img {
+    margin-left: 15%;
+}
+
+i.fa.fa-lock {
+    position: absolute;
+    top: 14%;
+    left: 2%;
+}
+::-webkit-input-placeholder {
+    /* Edge */
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #999;
+}
+
+::placeholder {
+    color: #999;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+}
+.login {
+    background: #fff;
+    padding-top: 67px;
+    padding-bottom: 55px;
+    visibility: hidden;
+    display: none;
+}
+.show-login{
+    display: block;
+    visibility: visible;
+}
+.link-to-register {
+    /* padding: 0px; */
+    margin-top: 3%;
+    margin-left: 10%;
+    padding: 5px;
+}
+
+a#sign-up-here {
+    background: #6dabe4;
+    padding: 3px 5px;
+    color: #FFFF;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* register */
+
+.link-to-login {
+    /* padding: 0px; */
+    padding: 10px;
+}
+
+a#login-here {
+
+    color: #6dabe4;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+.register {
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    display: none;
+    visibility: hidden;
+}
+.show-register{
+    display: block;
+    visibility: visible;
+}
+.username {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+h2#signup-register {
+    line-height: 1.66;
+    margin: 0px 0px 33px;
+    padding: 0;
+    font-weight: bold;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
